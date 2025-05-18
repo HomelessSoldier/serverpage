@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HomelessServer</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+     <style>
+         body {
+             font-family: 'Inter', sans-serif;
+         }
+         .button-glass {
+             background-color: rgba(255, 255, 255, 0.05);
+             backdrop-filter: blur(10px);
+             border: 1px solid rgba(255, 255, 255, 0.1);
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+             transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+         }
+         .button-glass:hover {
+             background-color: rgba(255, 255, 255, 0.1);
+             transform: scale(1.03);
+             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+         }
+         .button-glass:active {
+             transform: scale(0.98);
+             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+         }
+     </style>
+ </head>
+ <body class="min-h-screen bg-gradient-to-br from-blue-950 to-black flex flex-col items-center justify-center p-4">
+     <div class="max-w-4xl w-full space-y-6">
+         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center tracking-tight">
+             HomelessServer
+         </h1>
+         <p class="text-gray-300 text-center text-sm sm:text-base max-w-2xl mx-auto">
+             Casa-Os secure access.
+         </p>
+ 
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+             <a href="http://192.168.1.9:90" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://crowdin-static.cf-downloads.crowdin.com/images/project-logo/541572/small/7f0a982a217b261801fbd90e66d87df575.png" alt="CasaOS" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">CasaOS</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:8800/admin" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Pihole/icon.png" alt="Pi-hole" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">Pi-hole</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:10081" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png" alt="Nextcloud" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">Nextcloud</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:8123" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/HomeAssistant/icon.png" alt="Home Assistant" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">Home Assistant</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:8111" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/icon.png" alt="Crafty" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">Crafty</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:1080" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+                 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/octoprint.png" alt="OctoPrint" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">OctoPrint</span>
+             </a>
+ 
+             <a href="http://192.168.1.9:8097" target="_blank" rel="noopener noreferrer"
+                class="button-glass w-full flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl text-white space-y-1 aspect-square">
+				 <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                     <img src="https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Jellyfin/icon.png" alt="Jellyfin" class="max-w-full max-h-full" />
+                 </div>
+                 <span class="text-xs sm:text-sm font-medium break-words">Jellyfin</span>
+             </a>
+         </div>
+         <p class="text-gray-400 text-center text-xs sm:text-sm max-w-2xl mx-auto">
+             This site is protected by Cloudflare Access.
+         </p>
+     </div>
+ </body>
+ </html>
